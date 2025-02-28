@@ -8,11 +8,10 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-    
-    static let signInView = SignInView()
+    let context = SignInView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = signInView
+        view = context
     }
 }
