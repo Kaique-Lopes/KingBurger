@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import CustomUIButton
+import SnapKit
 
 class SignInView: UIView {
     
@@ -15,6 +17,9 @@ class SignInView: UIView {
         tf.placeholder = "E-mail"
         return tf
     }()
+    
+    let button = CustomButton(title: "dd", style: .filled(.systemBlue))
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .red
